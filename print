@@ -1,0 +1,7 @@
+#!/bin/bash
+set -eu
+
+# see http://linux.die.net/man/1/lp
+printer=$1
+lp -d ${printer} -o number-up=2 notes.pdf
+echo "Printing now..."

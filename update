@@ -1,0 +1,4 @@
+#!/bin/bash
+set -xeu
+
+wkhtmltopdf --copies 2 --page-size A5 notes.html notes.pdf

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Productivity: Notes</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+      }
+      section {
+        width: 148mm;
+        min-height: 210mm;
+      }
+      h1 {
+        margin-bottom: 10px;
+        border: 2px solid #000;
+        height: 40px;
+        width: 100%;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      li::before {
+        content: '▢';
+        margin-top: 1px;
+        margin-right: 4px;
+      }
+      li {
+        margin: 2px;
+        padding: 0;
+        line-height: 2;
+        border-bottom: 1px solid #ccc
+      }
+      /* thanks to https://jsfiddle.net/mturjak/2wk6Q/1949/ */
+      @page {
+        size: A4;
+        margin: 5mm;
+      }
+      @media print {
+        html, body {
+          width: 148mm;
+          height: 210mm;
+        }
+        section {
+          margin: 0;
+          border: initial;
+          border-radius: initial;
+          width: initial;
+          min-height: initial;
+          box-shadow: initial;
+          background: initial;
+          page-break-after: always;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>&nbsp;</h1>
+      <div id="notes">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
